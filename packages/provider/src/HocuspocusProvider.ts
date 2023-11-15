@@ -400,9 +400,9 @@ export class HocuspocusProvider extends EventEmitter {
         token,
         documentName: this.configuration.name,
       })
+    } else {
+      this.startSync()
     }
-
-    this.startSync()
   }
 
   async getToken() {
